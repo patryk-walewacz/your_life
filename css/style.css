@@ -26,7 +26,8 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0; }
 
 .row {
   margin: 0; }
@@ -58,25 +59,29 @@ a:link {
         font-size: 16px;
         text-transform: uppercase;
         display: block;
-        margin: auto; }
+        margin: auto;
+        letter-spacing: 2.4px; }
   .hero h1 {
     margin-top: 200px;
     font-size: 36px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 5.4px; }
   .hero p {
     font-size: 16px;
     margin: 13px 0 26px 0;
-    font-family: 'GothamRounded-Medium'; }
+    font-family: 'GothamRounded-Medium';
+    letter-spacing: 2.4px; }
 
-.started-btn {
+.started-btn-1, .started-btn-2 {
   background: #16a085;
   font-size: 12px;
   text-transform: uppercase;
   border: none;
-  width: 165px;
-  height: 50px;
+  width: 166px;
+  height: 49px;
   border-radius: 3px;
-  color: #fff; }
+  color: #fff;
+  letter-spacing: 1.8px; }
 
 .hero-icons {
   position: absolute;
@@ -90,14 +95,31 @@ a:link {
 /* ABOUT-US */
 .about-us {
   background: #f5f6f7;
-  padding: 113px 0 92px 0; }
+  position: relative; }
   .about-us .col:first-of-type {
-    padding-right: 50px; }
+    padding: 113px 0 92px 0; }
+  .about-us .col:last-of-type {
+    padding: 0;
+    position: relative;
+    height: 479px; }
   .about-us h2 {
     font-size: 18px;
     text-transform: uppercase;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    letter-spacing: 2.7px;
+    width: 376px; }
   .about-us p {
-    font-size: 12px; }
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    width: 428px;
+    margin-bottom: 47px; }
+  .about-us img {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+
+.started-btn-2 {
+  width: 192px;
+  height: 51px; }
 
 /*# sourceMappingURL=style.css.map */
