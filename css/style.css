@@ -21,8 +21,7 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0;
-  font-family: 'Work Sans', sans-serif; }
+  margin: 0; }
 
 .container {
   max-width: 1200px;
@@ -41,13 +40,13 @@ a:link {
   background-size: cover;
   background-position: center;
   color: #fff;
-  position: relative; }
+  position: relative;
+  font-family: 'GothamRounded-Bold'; }
   .hero nav {
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 30px;
-    height: 85px;
-    font-family: 'GothamRounded-Bold'; }
+    height: 85px; }
     .hero nav div {
       float: left;
       width: 20%;
@@ -67,7 +66,8 @@ a:link {
     text-transform: uppercase; }
   .hero p {
     font-size: 16px;
-    margin: 13px 0 26px 0; }
+    margin: 13px 0 26px 0;
+    font-family: 'GothamRounded-Medium'; }
 
 .started-btn {
   background: #16a085;
