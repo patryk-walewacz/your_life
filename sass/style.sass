@@ -28,7 +28,6 @@ body
 .container
 	max-width: 1200px
 	margin: 0 auto
-	padding: 0
 
 .row
 	margin: 0
@@ -104,15 +103,17 @@ a:link
 /* ABOUT-US */
 .about-us
 	background: #f5f6f7
-	position: relative
 
 	.col:first-of-type
 		padding: 113px 0 92px 0
+		position: relative
+		z-index: 50
 
 	.col:last-of-type
 		padding: 0
 		position: relative
 		height: 479px
+		z-index: 10
 
 	h2
 		font-size: 18px
@@ -120,17 +121,20 @@ a:link
 		margin-bottom: 50px
 		letter-spacing: 2.7px
 		width: 376px
+		max-width: 100%
 
 	p
 		font-size: 12px
 		letter-spacing: 1.8px
 		width: 428px
 		margin-bottom: 47px
+		max-width: 100%
 
 	img
 		position: absolute
 		right: 0
 		bottom: 0
+		object-fit: cover
 
 .started-btn-2
 	@extend .started-btn-1

@@ -26,8 +26,7 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0; }
+  margin: 0 auto; }
 
 .row {
   margin: 0; }
@@ -94,29 +93,34 @@ a:link {
 
 /* ABOUT-US */
 .about-us {
-  background: #f5f6f7;
-  position: relative; }
+  background: #f5f6f7; }
   .about-us .col:first-of-type {
-    padding: 113px 0 92px 0; }
+    padding: 113px 0 92px 0;
+    position: relative;
+    z-index: 50; }
   .about-us .col:last-of-type {
     padding: 0;
     position: relative;
-    height: 479px; }
+    height: 479px;
+    z-index: 10; }
   .about-us h2 {
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 50px;
     letter-spacing: 2.7px;
-    width: 376px; }
+    width: 376px;
+    max-width: 100%; }
   .about-us p {
     font-size: 12px;
     letter-spacing: 1.8px;
     width: 428px;
-    margin-bottom: 47px; }
+    margin-bottom: 47px;
+    max-width: 100%; }
   .about-us img {
     position: absolute;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    object-fit: cover; }
 
 .started-btn-2 {
   width: 192px;
