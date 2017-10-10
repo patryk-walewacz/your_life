@@ -21,7 +21,8 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: 'GothamRounded-Bold'; }
 
 .container {
   max-width: 1200px;
@@ -40,8 +41,7 @@ a:link {
   background-size: cover;
   background-position: center;
   color: #fff;
-  position: relative;
-  font-family: 'GothamRounded-Bold'; }
+  position: relative; }
   .hero nav {
     max-width: 1000px;
     margin: 0 auto;
@@ -56,7 +56,6 @@ a:link {
       .hero nav div a {
         color: #fff;
         font-size: 16px;
-        font-weight: 700;
         text-transform: uppercase;
         display: block;
         margin: auto; }
@@ -96,11 +95,9 @@ a:link {
     padding-right: 50px; }
   .about-us h2 {
     font-size: 18px;
-    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 50px; }
   .about-us p {
-    font-size: 12px;
-    font-weight: 300; }
+    font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */
