@@ -1,28 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,500,700&subset=latin-ext");
-@font-face {
-  font-family: 'GothamRounded-Bold';
-  src: url("GothamRounded-Bold.eot") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'GothamRounded-Medium';
-  src: url("GothamRounded-Medium.eot") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'GothamRounded-Book';
-  src: url("GothamRounded-Book.eot") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-
 * {
   box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: 'GothamRounded-Bold'; }
+  font-family: Gotham Rounded Medium; }
 
 .container {
   max-width: 1200px;
@@ -30,6 +11,9 @@ body {
 
 .row {
   margin: 0; }
+
+.col {
+  padding: 0; }
 
 a:link {
   text-decoration: none; }
@@ -67,10 +51,10 @@ a:link {
   .hero p {
     font-size: 16px;
     margin: 13px 0 26px 0;
-    font-family: 'GothamRounded-Medium';
+    font-family: Gotham Rounded Medium;
     letter-spacing: 2.4px; }
 
-.started-btn-1, .started-btn-2 {
+.started-btn-1, .started-btn-2, .learn-more-btn {
   background: #16a085;
   font-size: 12px;
   text-transform: uppercase;
@@ -100,7 +84,7 @@ a:link {
   .about-us .col:last-of-type {
     padding: 0;
     position: relative;
-    height: 479px;
+    height: 531px;
     z-index: 10; }
   .about-us h2 {
     font-size: 18px;
@@ -115,7 +99,7 @@ a:link {
     width: 428px;
     margin-bottom: 47px;
     max-width: 100%;
-    line-height: 180%; }
+    line-height: 24px; }
   .about-us img {
     position: absolute;
     right: 0;
@@ -126,14 +110,50 @@ a:link {
   width: 192px;
   height: 51px; }
 
+/* OFFER */
+.offer {
+  margin-top: 145px; }
+  .offer h2 {
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    font-size: 18px;
+    margin: 0; }
+  .offer p {
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    line-height: 22px;
+    margin: 44px 0 41px 0; }
+  .offer h4 {
+    font-size: 12px;
+    margin: 43px 0 5px 0; }
+  .offer .fa {
+    font-size: 35px; }
+  .offer .fa-angle-left {
+    margin-right: 10px; }
+
+.learn-more-btn {
+  width: 194px;
+  height: 54px; }
+
 /* MEDIA QUERIES */
 @media (max-width: 991px) {
   .about-us .col:first-of-type {
     padding: 80px 0 0 0; }
   .about-us .col:last-of-type {
-    height: 300px; }
+    height: 270px; }
   .about-us img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .offer {
+    margin-top: 100px;
+    margin-bottom: 80px; }
+    .offer h2 {
+      margin-top: 60px; }
+    .offer p {
+      margin: 25px 0 35px 0; }
+    .offer img {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%; } }
 
 @media (max-width: 767px) {
   .hero {
@@ -152,9 +172,13 @@ a:link {
     .hero h1 {
       margin: 80px 0 0 0;
       font-size: 32px; }
-  .started-btn-1, .started-btn-2 {
+  .started-btn-1, .started-btn-2, .learn-more-btn {
     margin-bottom: 110px; }
+  .started-btn-2 {
+    margin-bottom: 0; }
+  .learn-more-btn {
+    margin-bottom: 0; }
   .about-us .col:last-of-type {
-    height: 180px; } }
+    height: 230px; } }
 
 /*# sourceMappingURL=style.css.map */
