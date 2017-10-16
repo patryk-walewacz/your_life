@@ -20,9 +20,6 @@ body {
 a:link {
   text-decoration: none; }
 
-img {
-  object-fit: cover; }
-
 /* mixins */
 /* HERO */
 .hero {
@@ -161,7 +158,8 @@ img {
     font-size: 35px; }
   .gallery .item img {
     max-width: 370px;
-    max-height: 244px; }
+    max-height: 244px;
+    object-fit: cover; }
 
 .carousel-wrapper {
   position: relative; }
@@ -190,6 +188,51 @@ img {
   position: absolute;
   top: -40px;
   right: 0; }
+
+/* SUBSCRIBE */
+.subscribe {
+  height: 790px;
+  display: flex;
+  background-image: url(https://i.imgur.com/PvEXamd.png);
+  background-size: cover;
+  background-position: center; }
+  .subscribe div {
+    margin: auto;
+    max-width: 100%; }
+    .subscribe div h2 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 3.6px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 0 0 33px 0;
+      text-align: center; }
+    .subscribe div form {
+      margin: 0 auto;
+      width: 349px; }
+      .subscribe div form input {
+        width: 283px;
+        height: 63px;
+        float: left;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 2.4px;
+        color: #373737;
+        padding: 0 24px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; }
+      .subscribe div form button {
+        width: 66px;
+        height: 63px;
+        float: left;
+        border: none;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        background: #16a085; }
+        .subscribe div form button .fa {
+          color: #fff;
+          font-size: 23px; }
 
 /* MEDIA QUERIES */
 @media (max-width: 1199px) {
