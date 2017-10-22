@@ -5,7 +5,8 @@
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  color: #373737; }
 
 .container {
   max-width: 1200px;
@@ -46,7 +47,10 @@ a:link {
         text-transform: uppercase;
         display: block;
         margin: auto;
-        letter-spacing: 2.4px; }
+        letter-spacing: 2.4px;
+        transition: .2s; }
+        .hero nav div a:hover {
+          transform: scale(1.1); }
   .hero h1 {
     margin: 200px 0 0 0;
     font-size: 36px;
@@ -73,16 +77,22 @@ a:link {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   color: #fff;
-  letter-spacing: 1.8px; }
+  letter-spacing: 1.8px;
+  transition: .3s; }
+  .started-btn-1:hover, .started-btn-2:hover, .learn-more-btn:hover {
+    background: #1abc9c; }
 
 .hero-icons {
   position: absolute;
   bottom: 25px;
   width: 100%;
-  letter-spacing: 3px; }
+  letter-spacing: 4px; }
   .hero-icons .fa {
     font-size: 21px;
-    color: #fff; }
+    color: #fff;
+    transition: .2s; }
+    .hero-icons .fa:hover {
+      transform: scale(1.2); }
 
 /* ABOUT-US */
 .about-us {
@@ -209,10 +219,11 @@ a:link {
       text-align: center; }
     .subscribe div form {
       margin: 0 auto;
-      width: 349px; }
+      width: 349px;
+      height: 63px; }
       .subscribe div form input {
-        width: 283px;
-        height: 63px;
+        width: 81%;
+        height: 100%;
         float: left;
         border: none;
         font-size: 16px;
@@ -223,16 +234,108 @@ a:link {
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px; }
       .subscribe div form button {
-        width: 66px;
-        height: 63px;
+        width: 19%;
+        height: 100%;
         float: left;
         border: none;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
-        background: #16a085; }
+        background: #16a085;
+        transition: .3s; }
+        .subscribe div form button:hover {
+          background: #1abc9c; }
         .subscribe div form button .fa {
           color: #fff;
           font-size: 23px; }
+
+/* DOWNLOAD */
+.download {
+  background: #f5f6f7;
+  padding: 93px 0 116px 0; }
+  .download .download-container {
+    max-width: 1000px;
+    margin: 0 auto; }
+  .download h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 0 16px 0;
+    text-align: center; }
+  .download p {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 0 46px 0;
+    padding: 0 15px; }
+  .download button {
+    border: none; }
+  .download .row {
+    max-width: 648px;
+    margin: 0 auto; }
+
+.download-btn-wrapper {
+  width: 300px;
+  height: 59px;
+  margin: 0 auto;
+  color: #fff; }
+  .download-btn-wrapper:hover .download-left-btn {
+    background: #16a085; }
+  .download-btn-wrapper:hover .download-right-btn {
+    background: #1abc9c; }
+
+.download-left-btn {
+  width: 81%;
+  height: 100%;
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  background: #1abc9c;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  text-align: left;
+  padding-left: 33px;
+  transition: .3s; }
+
+.download-right-btn {
+  width: 19%;
+  height: 100%;
+  float: left;
+  font-size: 30px;
+  background: #16a085;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  transition: .3s; }
+
+/* FOOTER */
+footer {
+  padding: 43px 0 35px 0; }
+  footer img {
+    float: right; }
+  footer p {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    margin: 23px 0 0 0; }
+  footer span {
+    color: #16a085;
+    padding: 0 2px; }
+  footer a {
+    margin: 0 0 23px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    color: #373737;
+    transition: .1s; }
+    footer a:hover {
+      text-decoration: underline;
+      color: #373737; }
 
 /* MEDIA QUERIES */
 @media (max-width: 1199px) {
@@ -308,6 +411,33 @@ a:link {
   .arrows-wrapper {
     right: 10px; }
   .fa-angle-left {
-    margin-right: 20px; } }
+    margin-right: 20px; }
+  .download-btn-wrapper {
+    margin: 10px auto;
+    width: 235px;
+    height: 50px; }
+  .subscribe {
+    height: 550px; }
+    .subscribe div form {
+      width: 235px;
+      height: 40px; }
+      .subscribe div form input {
+        padding: 0 10px; }
+  footer img {
+    margin-top: 30px; }
+  .hero nav div a:hover {
+    transform: scale(1); }
+  .hero-icons .fa:hover {
+    transform: scale(1); }
+  .started-btn-1:hover, .started-btn-2:hover, .learn-more-btn:hover {
+    background: #16a085; }
+  .subscribe div form button:hover {
+    background: #16a085; }
+  .download-btn-wrapper:hover .download-left-btn {
+    background: #1abc9c; }
+  .download-btn-wrapper:hover .download-right-btn {
+    background: #16a085; }
+  footer a:hover {
+    text-decoration: none; } }
 
 /*# sourceMappingURL=style.css.map */
