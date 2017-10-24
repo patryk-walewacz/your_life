@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
 /* global styles */
 * {
   box-sizing: border-box; }
@@ -115,7 +115,7 @@ a:link {
     width: 376px;
     max-width: 90%; }
   .about-us p {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     letter-spacing: 1.8px;
     width: 428px;
@@ -141,7 +141,7 @@ a:link {
     font-weight: 700;
     margin: 0; }
   .offer p {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     letter-spacing: 1.8px;
     line-height: 22px;
@@ -180,17 +180,18 @@ a:link {
 .gallery-text-wrapper {
   width: 150px;
   text-align: center;
-  margin-top: 37.5px; }
+  margin-top: 28.5px; }
   .gallery-text-wrapper h4 {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 31px 0 24px 0; }
   .gallery-text-wrapper p {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 500;
     margin: 0;
-    padding: 0 10px; }
+    padding: 0 10px;
+    letter-spacing: 1.5px; }
 
 .arrows-wrapper {
   height: 35px;
@@ -332,7 +333,7 @@ footer {
     font-weight: 700;
     letter-spacing: 2.1px;
     color: #373737;
-    transition: .1s; }
+    transition: .2s; }
     footer a:hover {
       text-decoration: underline;
       color: #373737; }
@@ -422,7 +423,10 @@ footer {
       width: 235px;
       height: 40px; }
       .subscribe div form input {
-        padding: 0 10px; }
+        padding: 0 10px;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.8px; }
   footer img {
     margin-top: 30px; }
   .hero nav div a:hover {
